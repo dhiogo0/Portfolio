@@ -230,19 +230,21 @@
           <div class="contato-right">
             <h1>Contato</h1>
             <form action="https://api.staticforms.xyz/submit" method="POST">
-             "<!--" <input type="hidden" name="accessKey" value="f58a6bb3-c87f-4906-8b35-a84f0540bf9a">
+             <input type="hidden" name="accessKey" value="f58a6bb3-c87f-4906-8b35-a84f0540bf9a">
               <input type="hidden" name="redirectTo" value="">
-              <input type="hidden" name="replyTo" value="@">"-->"
+              <input type="hidden" name="replyTo" value="@">
               <div class="input-group">
-                <input type="text" class="field" id="inputnome" name="name"></input>
+                <input required type="text" class="field" id="inputnome" name="name"></input>
                 <label for="inputnome" class="field-label">Nome</label>
+                <span class="error"></span>
               </div>
               <div class="input-group">
-                <input type="text" class="field" id="inputemail" name="email"></input>
+                <input required type="email" class="field" id="inputemail" name="email"></input>
                 <label for="ipuntemail" class="field-label" autofocus>E-mail</label>
+                <span class="error"></span>
               </div>
               <div class="input-group">
-                <textarea name="message" class="field" id="mensagem"></textarea>
+                <textarea required name="message" class="field" id="mensagem"></textarea>
                 <label for="mensagem" class="field-label">Mensagem</label>
               </div>
               <button type="submit" class="btn btn-submit">Enviar</button>

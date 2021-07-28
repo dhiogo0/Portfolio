@@ -441,12 +441,22 @@ header {
   font-size: 1.2rem;
   transition: all 0.3s;
 }
-.field:focus ~ label {
+.field:focus ~ label,
+.field:valid ~ label {
   top: 0;
   font-size: 1rem;
 }
 .field:focus {
   border-bottom: 1px solid;
+}
+.input-group span.error {
+  display: flex;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.input-group span.error.active {
+  border: 1px solid red;
+  padding: 0.4rem;
 }
 .btn-submit {
   text-transform: uppercase;
