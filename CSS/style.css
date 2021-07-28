@@ -297,6 +297,7 @@ header {
 .projetos {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 .card {
   width: 18rem;
@@ -425,6 +426,7 @@ header {
   height: 3rem;
   outline: none;
   margin: 2rem 0;
+  margin-bottom: 0;
 }
 .input-group textarea {
   padding-top: 0.5rem;
@@ -441,8 +443,8 @@ header {
   font-size: 1.2rem;
   transition: all 0.3s;
 }
-.field:focus ~ label,
-.field:valid ~ label {
+.field:focus ~ .field-label,
+.field:valid ~ .field-label {
   top: 0;
   font-size: 1rem;
 }
@@ -452,11 +454,15 @@ header {
 .input-group span.error {
   display: flex;
   padding: 0;
+  margin-top: 0;
   background-color: rgba(255, 0, 0, 0.2);
+  margin: 0;
 }
 .input-group span.error.active {
   border: 1px solid red;
   padding: 0.4rem;
+  margin-top: 0;
+  margin: 0;
 }
 .btn-submit {
   text-transform: uppercase;
